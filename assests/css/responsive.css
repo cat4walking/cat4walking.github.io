@@ -92,6 +92,12 @@
 }
 /* mobile max-width: 739px */
 @media(max-width:739px){
+
+    .row{
+        margin: 0;
+    }
+
+    
     .hide__on-mobile{
         display: none;
     }
