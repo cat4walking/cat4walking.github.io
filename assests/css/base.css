@@ -19,6 +19,9 @@ html{
     font-family: 'Roboto', sans-serif;
     box-sizing: border-box;
 }
+
+
+
 /* responsive */
 .grid{
     width: 1200px;

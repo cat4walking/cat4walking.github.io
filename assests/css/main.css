@@ -397,6 +397,7 @@
     display: inline-block;
     padding: 0 6px;
     cursor: pointer;
+    -webkit-tap-highlight-color:transparent;
 }
 
 .header__cart-wrap:hover .header__cart-list{
@@ -954,6 +955,80 @@
     color: var(--primary-color);
     right: -3px;
 }
+/* Mobile category */
+
+.mobile__category{
+    display: none;
+}
+
+
+.mobile__category-list{
+    display: flex;
+    list-style: none;
+    padding-left: 0;
+    max-width: 100%;
+    overflow-x: auto;
+    margin: 0;
+}
+
+.mobile__category-list::-webkit-scrollbar{
+    display: none;
+}
+
+.mobile__category-item:first-child{
+    margin-left: 0;
+}
+
+.mobile__category-item:last-child{
+    margin-right: 0;
+}
+
+
+.mobile__category-item{
+    flex-shrink: 0;
+    margin: 0 8px;
+    border-radius: 4px;
+}
+
+.mobile__category-item:hover{
+    box-shadow: 5px 4px 2px rgba(0, 0, 0, 0.08);
+}
+
+.mobile__category-item:nth-of-type(3n + 1){
+    background-color: #87afd8;
+}
+
+.mobile__category-item:nth-of-type(3n + 2){
+    background-color: #76c9bd;
+}
+
+.mobile__category-item:nth-of-type(3n + 3){
+    background-color: #88cf81;
+}
+
+
+.mobile__category-link{
+    --line-height:2rem;
+    text-decoration: none;
+    color: white;
+    font-size: 1.3rem;
+    text-align: center;
+    display: block;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+    width: 110px;
+    height: calc(var(--line-height) * 2);
+    line-height:var(--line-height);
+    font-weight: 300;
+    /* không target */
+    user-select: none;
+    -webkit-user-select: none;
+    /* Bỏ hightline */
+    -webkit-tap-highlight-color: transparent;
+}
+
+
 
 /* Home sort + filter */
 

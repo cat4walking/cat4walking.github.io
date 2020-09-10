@@ -31,6 +31,19 @@
         display: none;
     }
 
+
+    .app-content{
+        padding-top:16px;
+    }
+
+    .home-product{
+        margin-top: 6px;
+    }
+
+    .mobile__category{
+        display: block;
+    }
+    
 }
 
 /* Tablet min-width:740px & max-width: 1023px */
