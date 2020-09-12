@@ -3,6 +3,8 @@
     background-image: linear-gradient(0, #fe6433, #f53e2d);
 
 }
+
+
 .header{
     height: var(--header-height);
 }
@@ -896,6 +898,10 @@
     background-color: #f5f5f5;
 }
 
+.app__container::-webkit-scrollbar{
+    display: none;
+}
+
 .app-content{
     padding-top: 24px;
 }
@@ -1026,6 +1032,7 @@
     -webkit-user-select: none;
     /* Bỏ hightline */
     -webkit-tap-highlight-color: transparent;
+    padding: 0 6px;
 }
 
 
@@ -1131,7 +1138,12 @@
 
 .home-product{
     margin-bottom: 10px;
+    -webkit-tap-highlight-color: transparent;
+
+    
 }
+
+
 
 .home-product-item{
     background-color: #fff;
@@ -1144,6 +1156,8 @@
     text-decoration: none;
     cursor: pointer;
 }
+
+.home-product-item
 
 .home-product-item:hover{
     transform: translateY(-1px);
@@ -1447,7 +1461,7 @@ i.home-product-item__like-icon--fill{
 }
 
 .nav__icon-tablet{
-    margin: 0 50px 0 auto;
+    margin-left: 34px;
 }
 
 .nav__button-close{
